@@ -1,0 +1,35 @@
+
+
+
+
+
+<html>
+<head>
+  <title>web02.2.3</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>뇌졸증 사전진단</h1>
+  <fieldset name="basic">
+    <legend> 기본정보 </legend>
+    <form action="/diag_input"  method="GET">
+    <strong>성별</strong>: <input type="radio" name="gender" value="Male" checked/> 남
+          <input type="radio" name="gender" value="Female" checked/> 여<br>
+    <strong>나이</strong>: <input type="number" name="age" min="1"/><br>
+  <br>
+
+  <fieldset name="interest">
+    <legend>건강정보</legend>
+    <strong>고혈압</strong><input type = "radio" name = "hypertension" value = 1> 유 <input type = "radio" name = "hypertension" value = 0> 무 <br>
+    <strong>심장질환</strong><input type = "radio" name = "heart_disease" value = 1> 유 <input type = "radio" name = "heart_disease" value = 0> 무 <br>
+    <strong>흡연</strong><input type = "radio" name = "smokes" value = 1> 흡연자 <input type = "radio" name = "smokes" value = 0.3> 과거 흡연 <input type = "radio" name = "smokes" value = 0> 비흡연 <br>
+    <strong>평균 혈당 수치 (avg_glucose_level)</strong>: <input type="number" name="avg_glucose_level" min="0"/><br>
+    <strong>체질량 지수(BMI)</strong>: <input type="number" name="bmi" min="0"/><br>
+    <input type="submit" value="확인"/>
+    <input type="submit" value="취소"/>
+    </form>
+  </fieldset>
+  <br>
+
+</body>
+</html>
